@@ -169,7 +169,7 @@ input, button {
     position: relative;
     border-radius: 8px;
     box-shadow: rgb(3 0 71 / 9%) 0 1px 3px;
-    margin: 15px;
+    margin: 10px;
 }
 
 .product h3 {
@@ -287,3 +287,15 @@ input, button {
     color: grey;
 } 
 /* ------------HEADING----------- */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 30px;
+}
+
+.grid2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}

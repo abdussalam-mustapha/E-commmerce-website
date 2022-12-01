@@ -7,12 +7,14 @@ import "./components/header/Header.css";
 import Header from "./components/header/Header";
 import Pages from "./components/pages/Pages";
 import Data from "./components/flashdeals/Data"
+import Sdata from "./components/shop/Sdata";
 import Carts from "./components/carts/Cart";
 
 
 function App() {
 
   const {productItems} = Data
+  const {shopItems} = Sdata
 
   const [cartItem, setCartItem] = useState([])
 
@@ -44,7 +46,7 @@ function App() {
       <Header cartItem={cartItem} />
         <Switch>
           <Route path="/" exact>
-            <Pages productItems = {productItems} addToCart={addToCart} />
+            <Pages productItems = {productItems} addToCart={addToCart} shopItems={shopItems}/>
           </Route>
           <Route path="/Cart" exact>
             <Carts cartItem = {cartItem} addToCart={addToCart} decreaseQty={decreaseQty}/>
