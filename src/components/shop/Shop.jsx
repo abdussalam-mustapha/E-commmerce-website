@@ -14,7 +14,7 @@ const Shop = ({ shopItems, addToCart }) => {
                     <div className="contentWidth">
                         <div className="heading d_flex">
                             <div className="heading-left row f_flex">
-                                <GiBorderedShield className='i-4' />
+                                {/* <GiBorderedShield className='i-4' /> */}
                                 <h2>Mobile Phones</h2>
                             </div>
                             <div className="heading-right row">

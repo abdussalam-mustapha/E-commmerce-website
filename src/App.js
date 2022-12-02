@@ -9,6 +9,7 @@ import Pages from "./components/pages/Pages";
 import Data from "./components/flashdeals/Data"
 import Sdata from "./components/shop/Sdata";
 import Carts from "./components/carts/Cart";
+import Footer from "./components/footer/Footer";
 
 
 function App() {
@@ -52,6 +53,7 @@ function App() {
             <Carts cartItem = {cartItem} addToCart={addToCart} decreaseQty={decreaseQty}/>
           </Route>
         </Switch>
+        <Footer />
       </Router>
     </>
   );

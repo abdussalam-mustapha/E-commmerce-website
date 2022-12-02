@@ -1,5 +1,7 @@
 import React from 'react'
-import img from "../../assets/logo.jpeg"
+import img from "../../assets/r.png"
+
+import "./style.css"
 
 const Catg = () => {
 
@@ -36,9 +38,9 @@ const Catg = () => {
     ]
 
     return (
-        <div>
+        <>
              <div className="category">
-                <div className="c_head d_flex">
+                <div className="chead d_flex">
                     <h1>Brands</h1>
                     <h1>Shops</h1>
                 </div>
@@ -56,7 +58,7 @@ const Catg = () => {
                     <button>View all Brands</button>
                 </div>
              </div>
-        </div>
+        </>
     )
 }
 
